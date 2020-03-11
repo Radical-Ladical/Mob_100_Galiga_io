@@ -19,3 +19,34 @@ Space = shoot beam
 D = Shield
 S = Teleport (maybe if achievable)
 Shift = Special abilities
+
+
+
+
+Schdeule
+-------------------
+Wednesday-
+    Wire Frame
+    Layout of game
+
+Thursday-
+    JS
+    CS
+    movement of character
+    movement of projectiles
+    movement of enemies
+
+Friday-
+    JS
+    Unit interaction
+    adding the abilities
+    add area movement and in game walls
+
+Saturday-
+    work
+
+Sunday-
+    work
+
+Monday-
+    Polishing game 
