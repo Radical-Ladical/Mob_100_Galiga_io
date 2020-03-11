@@ -1,0 +1,52 @@
+					Pseudo Code
+
+Let hero equal
+Let enemy equal
+Let beam equal 
+Let enemy beam equal
+
+Hero Functionality
+If button1 is pressed move down
+else if button2 is pressed move left
+Else if button3 is up
+Else if button 4 is pressed move right
+Else if button 5 is pressed then shoot
+Else if button 6 etc (May need more buttons during development day
+
+
+Enemy functionality
+If stationary move down a certain amount of space right
+Else if moving, move any direction for certain distance and/or time
+Else shoot abilities
+
+Enemy (abilities) functionality
+If stationary and set time interval meet then certain trajectory will execute
+Else move to center of screen (to check to see if command is executing)
+
+
+Hero Beam
+Beam for loop with iteration, and velocity and no limit max (add limit if can)
+Add range of dmg within a 5 dmg range
+
+
+Enemy beam( will add in later development if possible)
+Beam for loop with iteration, and velocity and no limit max (add limit if can)
+Add range of dmg within a 5 dmg range
+
+Function for beams (hero)
+For loop for the beams 
+If statements for when beams interact with the object target(s)
+
+Function for beams (enemy)
+For loop for the beams
+If statements for when beams interact with object target(s)
+
+
+Hero movement (function)
+Character move from original spot to new spot
+
+
+Enemy movement (function)
+Random movement from original spot
+Set velocity 
+Put a defined grid so enemy doesn’t leave screen

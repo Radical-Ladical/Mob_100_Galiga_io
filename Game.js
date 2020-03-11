@@ -36,7 +36,7 @@ let enemies = [
 ];
 
 
-let hero = {
+let Shigeo= {
     top:700,
     left:550
 };

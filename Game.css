@@ -1,6 +1,30 @@
 .background {
-    background: url("Assets/739984.png") center;
-    height: 800px;
-    width: 1000px;
-    posi
+    background: url("Assets/183090575.jpg") center;
+    height: 1200px;
+    width: 800px;
+    position: absolute;
+    border: solid;
+    
+}
+#Shigeo {
+    background: url("Assets/Shigeo_Kageyama\,_the_Strongest_Esper_of_Salt_Middle.png") top;
+    height: 100px;
+    width: 100px;
+    top: 1000px;
+    left: 350px;
+    position: absolute;
+}
+#enemies {
+    background: url("Assets/Mob-Psycho-100-Art-Wall-Decor-Silk-Print-Poster.jpg")center top;
+    height: 150px;
+    width:100px;
+    top: 200px;
+    left: 350px;
+    position: absolute;
+}
+#beam {
+    background-image: url("Assets/183090575.jpg");
+    height:30px;
+    width: 10px; 
+    background: magenta;
 }
