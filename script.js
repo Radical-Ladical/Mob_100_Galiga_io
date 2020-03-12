@@ -25,7 +25,7 @@ document.onkeydown = function(e) {
     else if (e.keyCode === 32) {
         console.log("fire")
         Beams.push({
-            left:Shigeo.left +15,
+            left:Shigeo.left +45,
             top:Shigeo.top
         })
         drawBeams()

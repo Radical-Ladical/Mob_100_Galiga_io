@@ -1,5 +1,5 @@
 .background {
-    background: url("Assets/183090575.jpg") center;
+    background: url("assets/game_background.jpg") center;
     height: 1200px;
     width: 800px;
     position: absolute;
@@ -7,7 +7,7 @@
     
 }
 #Shigeo {
-    background: url("Assets/Shigeo_Kageyama\,_the_Strongest_Esper_of_Salt_Middle.png") top;
+    background: url("assets/player.png") top;
     height: 100px;
     width: 100px;
     top: 1000px;
@@ -15,7 +15,7 @@
     position: absolute;
 }
 #enemies {
-    background: url("Assets/Mob-Psycho-100-Art-Wall-Decor-Silk-Print-Poster.jpg")center top;
+    background: url("assets/boss.jpg")center top;
     height: 150px;
     width:100px;
     top: 200px;
@@ -23,9 +23,10 @@
     position: absolute;
 }
 .beam {
-    background-image: url("Assets/183090575.jpg");
+    background-image: url("assets/Beam.jpg");
     height:16px;
     width: 10px; 
+    position: absolute;
     background: magenta;
 }
 #beams {
