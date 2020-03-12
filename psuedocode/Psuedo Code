@@ -50,3 +50,14 @@ Enemy movement (function)
 Random movement from original spot
 Set velocity 
 Put a defined grid so enemy doesn’t leave screen
+
+
+Barriers
+Add if else statements
+Add a function that makes certain objects interact with barriers when both objects 
+Cross at the outer most pixel.
+
+
+Loser
+Add if statement for win loss condition
+Add an alert to show result
