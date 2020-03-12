@@ -22,9 +22,14 @@
     left: 350px;
     position: absolute;
 }
-#beam {
+.beam {
     background-image: url("Assets/183090575.jpg");
-    height:30px;
+    height:16px;
     width: 10px; 
     background: magenta;
+}
+#beams {
+    height: 1200x;
+    width:800px;
+    position:absolute;
 }

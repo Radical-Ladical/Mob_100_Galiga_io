@@ -22,10 +22,18 @@ document.onkeydown = function(e) {
         Shigeo.top=Shigeo.top+10;
         moveShigeo()
     }
+    else if (e.keyCode === 32) {
+        console.log("fire")
+        Beams.push({
+            left:Shigeo.left +15,
+            top:Shigeo.top
+        })
+        drawBeams()
+    }
 }
 //-------Variables-----\\
 
-let missiles = [];
+let Beams = [];
 let enemies = [
     {left:200, top:100},
     {left:200, top:100},
@@ -57,7 +65,27 @@ function moveShigeo () {
 }
 
 
-function gameLoop() {
-    
+function drawBeams() {
+    document.getElementById("beams").innerHTML = "";
+    for(let beam = 0; beam < Beams.length; beam++) {
+        document.getElementById("beams").innerHTML += 
+        `<div class='beam' style='left:${Beams[beam].left}px;
+        top:${Beams[beam].top}px;'></div>`;
+    }
 }
-gameLoop()
+
+
+
+function moveBeams() {
+    for(let beam=0;beam<Beams.length;beam++) {
+        Beams[beam].top=Beams[beam].top-5;
+    }
+}
+
+
+function gameLoop() {
+    setTimeout(gameLoop,10)
+    moveBeams();
+    drawBeams();
+}
+gameLoop();

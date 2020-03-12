@@ -13,6 +13,12 @@ by defeating him if you do not then the world will be lost by your own hands.
 
 
 
+ wireframe1.0.jpg
+ wireframe2.0.jpg
+
+
+
+
 1)Player controls
 ------------------
 Space = shoot beam
