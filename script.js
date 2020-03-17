@@ -35,33 +35,42 @@ document.onkeydown = function(e) {
 
 let Beams = [];
 let enemies = [
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:100},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
-    {left:200, top:175},
+    {left:300, top:100},
+    {left:500, top:100},
+    {left:700, top:100},
+    {left:900, top:100},
+    {left:1100, top:100},
+    {left:300, top:300},
+    {left:500, top:300},
+    {left:700, top:300},
+    {left:900, top:300},
+    {left:1100, top:300},
 ];
 
-
 let Shigeo= {
-    top:1000,
-    left:350
+    top:700,
+    left:710
 };
 
 function moveShigeo () {
     document.getElementById("Shigeo").style.left=Shigeo.left +"px";
     document.getElementById("Shigeo").style.top=Shigeo.top +"px";
+}
+
+function drawEnemies(){
+    document.getElementById("enemy").innerHTML = "";
+    for(let enemy = 0; enemy < enemies.length;enemy++) {
+        document.getElementById("enemy").innerHTML += 
+        `<div class='enemies' style='left:${enemies[enemy].left}px;
+        top:${enemies[enemy].top}px;'></div>`;
+    }
+}
+
+
+function moveEnemies() {
+    for(let enemy = 0; enemy < enemies.length; enemy++) {
+        enemies[enemy].top = enemies[enemy].top +0.5;
+    }
 }
 
 
@@ -82,10 +91,30 @@ function moveBeams() {
     }
 }
 
+function collisionDetection() {
+    for(let enemy = 0; enemy < enemies.length; enemy++) {
+        for(let beam = 0; beam < Beams.length; beam++) {
+            if( 
+            (Beams[beam].top <= enemies[enemy].top + 50) &&
+            (Beams[beam].top >= enemies[enemy].top) &&
+            (Beams[beam].left >= enemies[enemy].left) &&
+            (Beams[beam].left <= enemies[enemy].left + 50))
+            {
+                enemies.splice(enemy, 1);
+                Beams.splice(beam, 1);
+            }
+            console.log("boom!")
+        }
+    }
+}
+
+
 
 function gameLoop() {
     setTimeout(gameLoop,10)
     moveBeams();
     drawBeams();
+    moveEnemies();
+    drawEnemies();
+    collisionDetection();
 }
-gameLoop();

@@ -1,7 +1,7 @@
 .background {
     background: url("assets/game_background.jpg") center;
-    height: 1200px;
-    width: 800px;
+    height: 800px;
+    width: 1420px;
     position: absolute;
     border: solid;
     
@@ -10,17 +10,21 @@
     background: url("assets/player.png") top;
     height: 100px;
     width: 100px;
-    top: 1000px;
-    left: 350px;
+    top: 700px;
+    left: 710px;
     position: absolute;
 }
-#enemies {
+.enemies {
     background: url("assets/boss.jpg")center top;
     height: 150px;
     width:100px;
-    top: 200px;
-    left: 350px;
     position: absolute;
+}
+
+#enemy {
+    height: 800px;
+    width:1200px;
+    position:absolute;
 }
 .beam {
     background-image: url("assets/Beam.jpg");
